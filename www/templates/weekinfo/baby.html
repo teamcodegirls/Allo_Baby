@@ -1,0 +1,29 @@
+<ion-view class="layout">
+<ion-content>
+<div class="card item-text-wrap">
+  <img class="imgfull" src="{{weekdata.babydevelopmentimage}}">
+    <div class="row padding" ng-if="weekdata.babysize != '' && weekdata.weight != '' && weekdata.length != ''">    
+        <div class="col col-30">
+          <span class="font-pink">{{weeklyinfo.baby.babysize}}</span><br>
+          <span class="font-light">{{weekdata.babysize}}</span>
+        </div>
+         
+        <div class="col col-40 text-center">
+               <span class="font-pink">{{weeklyinfo.baby.weight}}</span><br>
+                       <span class="font-light">{{weekdata.weight}}</span> <br>          
+        </div>
+        <div class="col col-10"></div>
+        <div class="col col-20 text-right">
+          <span class="font-pink">{{weeklyinfo.baby.height}}</span><br>
+          <span class="font-light">{{weekdata.length}}</span>
+        </div>
+    </div> 
+          <div ng-if="weekdata.babysize != '' && weekdata.weight == '' && weekdata.length == ''"><br>    
+              <span class="font-head padding">{{weeklyinfo.baby.babysize}}</span> :  <span class="font-light">{{weekdata.babysize}}</span><br><br>
+          </div>    
+              <span class="font-head padding">{{weeklyinfo.baby.babydevelopment}}</span><br>
+              <p class="font-bind padding w3-justify" ng-bind-html="weekdata.babydevelopment" style="color: #757575; font-size: 1.13em;"> </p>
+         </div>
+ <br><br><br><br>
+</ion-content>
+</ion-view>

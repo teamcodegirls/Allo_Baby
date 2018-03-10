@@ -1,0 +1,74 @@
+{
+  "userSays": [
+    {
+      "id": "1cb28dc8-0388-4377-bf88-c1c2e93f5a35",
+      "data": [
+        {
+          "text": "Can I get some tips?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ca18e6ad-3e8b-4431-a463-db488f4fa9bf",
+      "data": [
+        {
+          "text": "Do you have any tips for me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e1d6274e-1e65-478a-ac28-2b4f62ea6594",
+      "data": [
+        {
+          "text": "Pregnancy tips"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "72a29351-2d42-4d67-b18b-a7ec99765857",
+      "data": [
+        {
+          "text": "Give me some tips"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "c4d4fa54-5e0f-4a03-b5cd-b641759f5f38",
+  "name": "Savemom.Pregnancy tips",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Even when you\u0027re still trying to conceive, it\u0027s smart to start taking prenatal vitamins. Your baby\u0027s neural cord, which becomes the brain and spinal cord, develops within the first month of pregnancy, so it\u0027s important you get essential nutrients, like folic acid, calcium, and iron, from the very start.",
+            "Staying active is a must for most moms to be. Regular exercise will help you control your weight, improve circulation, boost your mood, and help you sleep better. Plus, getting into an exercise habit now will help you set a good example for your child after she\u0027s born.",
+            "Pilates, yoga, swimming, and walking are all great activities for most pregnant women, but be sure to check with your doctor first before starting any exercise program. Aim for 30 minutes of exercise most days of the week. Listen to your body, though, and don\u0027t overdo it.",
+            "Even if this isn\u0027t your first baby, attending a childbirth class will help you feel more prepared for delivery. Not only will you have the chance to learn more about childbirth and infant care, but you can ask specific questions and voice any concerns. You\u0027ll also become more acquainted with the facility and its staff.",
+            "Now is also a good time to brush up on your family\u0027s medical history. Talk to your doctor about problems with past pregnancies, and report any family incidences of birth defects.",
+            "Even everyday tasks like scrubbing the bathroom or cleaning up after pets can become risky when you\u0027re pregnant. Exposure to toxic chemicals, lifting heavy objects, or coming in contact with bacteria can harm you and your baby. Here are some things to (hooray!) take off your to-do-list:\nHeavy lifting\nClimbing on stepstools or ladders\nChanging kitty litter (to avoid toxoplasmosis, a disease caused by a parasite which cats can carry)\nUsing harsh chemicals\nStanding for long periods of time, especially near a hot stove.\nAlso, wear gloves if you\u0027re working in the yard where cats may have been, and wash your hands thoroughly after handling raw meat."
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

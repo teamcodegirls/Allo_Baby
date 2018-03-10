@@ -1,0 +1,49 @@
+<ion-view hide-nav-bar='true' can-swipe-back='false' class='layout'>
+  
+  <ion-content class='padding iniLogin'>
+    <form name='form'>
+
+     <center><img src='{{getmobile.logo}}' height='90px' style="margin-top: 3em !important;"></center>
+   <p class='headerh1' align='center'>{{getmobile.appname}}</p>
+    <div class='list list-icon authheight'>
+
+    <div class='row'>
+      <div class='col-10 rowicon'>
+      <i class='icon {{getmobile.nameicon}} authicon'></i>
+      </div>
+      <div class='col-90 rowtext'>
+             <label class='item item-input item-floating-label' >
+                    <input type='text' placeholder='{{getmobile.nameplaceholder}}' ng-model='user.name' style='color: #000000;' autocomplete='off'>
+                </label> 
+        </div>
+      </div> 
+
+      <div class='row'>
+      <div class='col-10 rowicon'>
+      <i class='icon {{getmobile.emailicon}} authicon'></i>  
+      </div>
+      <div class='col-90 rowtext'>                 
+                <label class='item item-input item-floating-label'>
+                    <input type='email' placeholder='{{getmobile.emailplaceholder}}' ng-model='user.email' ng-pattern='/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/' style='color: #000000;' name='email' autocomplete='off'>
+                    <span class='authalert' ng-show='form.email.$error.pattern'>{{getmobile.emailerrortext}}</span>
+                </label>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-10 rowicon'>
+        <i class='icon {{getmobile.phoneicon}} authicon'></i>  
+        </div>
+      <div class='col-90 rowtext'>  
+                <label class='item item-input item-floating-label'>
+                   <input type='tel' placeholder='{{getmobile.phoneplaceholder}}' ng-model='user.mobile' maxlength='10' ng-minlength='10' style='color: #000000;' name='mobile' autocomplete='off'>
+                   <span class='authalert' ng-show='form.mobile.$error.minlength'>{{getmobile.phoneerrortext}}</span>
+                </label>
+        </div>
+      </div>
+                <button class='signupBtn' ng-click='getOTP(user)' ng-disabled='!user.name || !user.email || !user.mobile || form.email.$error.pattern || form.mobile.$error.minlength'>{{getmobile.getinbutton}}</button>
+              
+                </div>            
+      </form>      
+  </ion-content>
+</ion-view>

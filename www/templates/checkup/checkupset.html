@@ -1,0 +1,36 @@
+ <ion-modal-view>
+    <ion-header-bar class="bar-pink">
+      <h1 class="title" style="color:white;">{{checkupsetdata.headertext}}</h1>
+      <button class="button button-clear right" style="padding-top:5px;text-transform: capitalize !important; padding-right: 1em !important;" ng-click="closeModal1()"><i class="{{checkupsetdata.menuicon}}"></i></button>
+    </ion-header-bar>
+    <ion-content class="padding has-header layout">
+      <ion-list>
+       <div class="row">
+              <div class="col-10" style="margin-top : 25px !important;">
+              <i class="icon {{checkupsetdata.checkupdateicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 20px !important;">  
+              <ionic-datepicker date="checkupdate" ng-model="checkupdate" callback="datePickerCallback1" min="minDate">
+                  <label class="item item-input item-floating-label">
+                  <span ng-if="checkupdate != null" style="color: #838186;"> {{checkupdate | date:'dd/MM/yyyy'}} </span>
+                  <span ng-if="checkupdate == null" style="color: #838186; margin-bottom: 3em;">{{checkupsetdata.checkupdateplaceholder}}</span>
+                  </label>
+                </ionic-datepicker>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-10" style="margin-top : 35px !important;">
+              <i class="icon {{checkupsetdata.checkuptimeicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 20px !important;">                 
+                <label class="item item-input item-floating-label">
+                    <input type="text" class="form-control" ng-model="checkuptime" placeholder="{{checkupsetdata.checkuptimeplaceholder}}" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}" style="color: #838186;" autocomplete="off">
+                </label>
+              </div>
+          </div>
+        
+          <button class="block-btn" ng-click="setcheckup(checkupdate, checkuptime)" ng-disabled="!checkupdate || !checkuptime" style="margin-top: 2em;">{{checkupsetdata.setcheckupbutton}}</button>
+       </ion-list>
+    </ion-content>
+  </ion-modal-view>

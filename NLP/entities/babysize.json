@@ -1,0 +1,17 @@
+{
+  "id": "3eecfb07-12ae-4378-bd01-1f5d3387ee98",
+  "name": "babysize",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "babysize",
+      "synonyms": [
+        "length",
+        "size",
+        "weight"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

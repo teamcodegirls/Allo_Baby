@@ -1,0 +1,62 @@
+<ion-view view-title="{{weeklyinfo.headertext}} {{weekdata.week}}" hide-back-button="true" class="layout">
+<ion-header-bar align-title="left" class="bar-pink" style="border-bottom : transparent !important; box-shadow: 0 0px 0px rgba(0,0,0,0.16) !important">
+  <div class="buttons">
+    <button class="button button-icon button-clear {{weeklyinfo.menuicon}}" ng-click="toggleLeftSideMenu()">
+  </div>
+  <h1 class="title" style="font-size:18px;padding-top:3px;padding-left: 1.5em;">{{weeklyinfo.headertext}} {{weekdata.week}}</h1>
+  <div class="buttons">
+      <button class="button button-clear padding-right" style="padding-top: 5px; padding-right : 0.9em!important;" ng-click="popover.show($event)">
+      <font color="#FFFFFF" size="5px"><i class="{{weeklyinfo.headericon}}"></i></font></button>
+  </div>
+</ion-header-bar>
+<script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view>
+
+        <ion-content>
+        
+          <div class=" item-input-inset">
+            <label class="item-input-wrapper">    
+              <i class="icon {{weeklyinfo.popovericon}} placeholder-icon"></i> 
+              <input type="search" placeholder="{{weeklyinfo.popoverplaceholder}}" ng-model="search.week">
+            </label>
+      
+          </div>
+
+          <ion-item class="padding" ng-click= gotoweekinfo() style="background-color:{{bgcolor}}">
+             <a><font color="black">{{weeklyinfo.popovertext}}</font></a>
+          </ion-item>   
+          <ion-item class="padding" ng-repeat="data in weekdatas | filter:search" ng-click="gotoweekinfos(data.week)" style="background-color:{{data.bgcolor1}}">
+              <a><font color="black">{{data.week}}</font></a>
+          </ion-item>
+          
+
+        </ion-content>
+      </ion-popover-view>
+    </script>
+  <ion-content class="has-header">
+      <ion-slide-box slide-tabs-scrollable="true" show-pager="false" ion-slide-tabs2>
+                <ion-slide ion-slide-tab-label2="{{weeklyinfo.tab1text}}">
+                <div ng-include src="'templates/weekinfo/baby1.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+                <ion-slide ion-slide-tab-label2="{{weeklyinfo.tab2text}}">
+                <div ng-include src="'templates/weekinfo/mom1.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+                <ion-slide ion-slide-tab-label2="{{weeklyinfo.tab3text}}">
+                <div ng-include src="'templates/weekinfo/tips1.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+        </ion-slide-box>      
+  </ion-content>
+  <!--<div class="float-button" style="padding-right: 1.5em;">
+     <span class="height-fix">
+       <button id="fab-profile" class="button button-fab button-fab-bottom-right fab-fixed button-positive pane" ng-click="doRefresh()" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px); ">
+         <i class="icon {{weeklyinfo.fabicon}}"></i>
+       </button>
+     </span>
+   </div> -->
+</ion-view>

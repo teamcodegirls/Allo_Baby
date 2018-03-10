@@ -1,0 +1,140 @@
+{
+  "userSays": [
+    {
+      "id": "0bc0aa63-818e-4362-966f-0512ae4054d3",
+      "data": [
+        {
+          "text": "check "
+        },
+        {
+          "text": "all",
+          "alias": "all",
+          "meta": "@all",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a520a9ba-72e9-4e50-8ce3-aeb4bf391b60",
+      "data": [
+        {
+          "text": "and for "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "92eebf21-279b-4497-92e7-a19419dee98f",
+      "data": [
+        {
+          "text": "and the one for "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "28de8ea8-24f3-4dfa-9d6d-6dff746bd0a2",
+      "data": [
+        {
+          "text": "for "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": false
+        },
+        {
+          "text": " as "
+        },
+        {
+          "text": "well",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d562c3b4-c2a9-4051-8e56-edd58e3cdfc5",
+      "data": [
+        {
+          "text": "and for "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "44d57b5c-b588-461d-b16b-adf53f615925",
+  "name": "alarm.check - context:alarm-check",
+  "auto": true,
+  "contexts": [
+    "alarm-check"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.check",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "isList": false
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence"
+        },
+        {
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

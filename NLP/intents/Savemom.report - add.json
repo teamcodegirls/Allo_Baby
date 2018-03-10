@@ -1,0 +1,67 @@
+{
+  "userSays": [
+    {
+      "id": "a2a4e0f0-f02b-4b87-9f24-39facf8792d6",
+      "data": [
+        {
+          "text": "Save my report"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c927320c-d209-46eb-b146-806480cd4a54",
+      "data": [
+        {
+          "text": "Include my report"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fa48f794-5e31-4b81-ba3b-bc9e60cd9c8b",
+      "data": [
+        {
+          "text": "I want to add my report"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3dcf8fc5-ccac-49ec-a941-d8fc5bfb1cfd",
+      "data": [
+        {
+          "text": "I want to save my report"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "fc881a4a-355c-4473-912d-105734fd50b1",
+  "name": "Savemom.report - add",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "reportadd",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

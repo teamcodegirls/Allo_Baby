@@ -1,0 +1,43 @@
+{
+  "id": "f071e02d-8bd6-4632-8698-700b1817fead",
+  "name": "weekno",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "present",
+      "synonyms": [
+        "this",
+        "current",
+        "present"
+      ]
+    },
+    {
+      "value": "next",
+      "synonyms": [
+        "next",
+        "upcoming"
+      ]
+    },
+    {
+      "value": "previous",
+      "synonyms": [
+        "previous",
+        "past"
+      ]
+    },
+    {
+      "value": "number",
+      "synonyms": [
+        "number"
+      ]
+    },
+    {
+      "value": "last",
+      "synonyms": [
+        "last"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

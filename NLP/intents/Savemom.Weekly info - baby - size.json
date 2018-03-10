@@ -1,0 +1,159 @@
+{
+  "userSays": [
+    {
+      "id": "69c0f3c2-f606-4d86-9ad5-daec4394b128",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "length",
+          "alias": "babysize",
+          "meta": "@babysize",
+          "userDefined": true
+        },
+        {
+          "text": " of my baby?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ca8d80c0-5efd-4f36-b192-ec26505dfae5",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "weight",
+          "alias": "babysize",
+          "meta": "@babysize",
+          "userDefined": true
+        },
+        {
+          "text": " of my baby?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c7f2f746-f78a-46f7-bdfa-d7868f7cdd73",
+      "data": [
+        {
+          "text": "how big was my baby "
+        },
+        {
+          "text": "last",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c1c66550-4798-4191-a74f-903151495814",
+      "data": [
+        {
+          "text": "how big is my baby "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ddfbb773-79d3-454b-8391-60f7b280be3d",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "size",
+          "alias": "babysize",
+          "meta": "@babysize",
+          "userDefined": true
+        },
+        {
+          "text": " of my baby?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "987c2451-7041-4bfe-8867-e51aff16ec20",
+  "name": "Savemom.Weekly info - baby - size",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "babyaction",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@weekno",
+          "name": "weekno",
+          "value": "$weekno",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date-time",
+          "name": "date-time",
+          "value": "$date-time",
+          "isList": false
+        },
+        {
+          "dataType": "@babysize",
+          "name": "babysize",
+          "value": "$babysize",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

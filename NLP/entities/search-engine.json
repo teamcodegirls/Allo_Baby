@@ -1,0 +1,73 @@
+{
+  "id": "3729e0ac-7e33-4635-8f4d-96816994d718",
+  "name": "search-engine",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Google",
+      "synonyms": [
+        "Google"
+      ]
+    },
+    {
+      "value": "Baidu",
+      "synonyms": [
+        "Baidu"
+      ]
+    },
+    {
+      "value": "Yahoo",
+      "synonyms": [
+        "Yahoo"
+      ]
+    },
+    {
+      "value": "Amazon",
+      "synonyms": [
+        "Amazon"
+      ]
+    },
+    {
+      "value": "Ebay",
+      "synonyms": [
+        "Ebay"
+      ]
+    },
+    {
+      "value": "Wikipedia",
+      "synonyms": [
+        "Wikipedia",
+        "Wiki"
+      ]
+    },
+    {
+      "value": "WolframAlpha",
+      "synonyms": [
+        "WolframAlpha",
+        "Wolfram Alpha",
+        "Wolfram"
+      ]
+    },
+    {
+      "value": "Bing",
+      "synonyms": [
+        "Bing"
+      ]
+    },
+    {
+      "value": "Yandex",
+      "synonyms": [
+        "Yandex"
+      ]
+    },
+    {
+      "value": "DuckDuckGo",
+      "synonyms": [
+        "DuckDuckGo",
+        "Duck Duck Go"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

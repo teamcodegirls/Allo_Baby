@@ -1,0 +1,28 @@
+{
+  "id": "609fed0a-d041-4f5d-8062-c30cbdec94bf",
+  "name": "symptom",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "symptoms",
+      "synonyms": [
+        "headache",
+        "vomiting",
+        "bleeding gums",
+        "acne",
+        "cough",
+        "swelling",
+        "red rash",
+        "pelvic pain",
+        "mood swings",
+        "migraines",
+        "morning sickness",
+        "nausea",
+        "lazy",
+        "laziness"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

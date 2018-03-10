@@ -1,0 +1,175 @@
+{
+  "userSays": [
+    {
+      "id": "789816e2-aeb2-4c68-9a38-9d73e717f4e0",
+      "data": [
+        {
+          "text": "another one"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "438c06fe-5f73-49e0-a629-7d98296193db",
+      "data": [
+        {
+          "text": "set another one"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e46ef82c-fca5-47d8-8d53-1f12228d1365",
+      "data": [
+        {
+          "text": "another one for "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f82cc82d-2c8a-4605-88ce-9441e15e3ff8",
+      "data": [
+        {
+          "text": "and for "
+        },
+        {
+          "text": "Sunday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "8 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "890e4f4f-1fa0-4833-b7bd-92d44c0cd429",
+      "data": [
+        {
+          "text": "set another one for "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6ee12117-0113-408b-aa20-9b51bad348cc",
+      "data": [
+        {
+          "text": "another",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "db847f6d-38af-48ef-9166-75ea23af6c2f",
+      "data": [
+        {
+          "text": "another "
+        },
+        {
+          "text": "one",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "10 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "6888b598-9e26-4745-84e0-0ceeaa7237ee",
+  "name": "alarm.set - context:alarm - comment:another one",
+  "auto": true,
+  "contexts": [
+    "alarm"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "alarm.set",
+      "affectedContexts": [
+        {
+          "name": "alarm",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "isList": false
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

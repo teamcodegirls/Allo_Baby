@@ -1,0 +1,133 @@
+{
+  "userSays": [
+    {
+      "id": "f7dc821f-5078-4d25-be69-0a2f1db85179",
+      "data": [
+        {
+          "text": "how about "
+        },
+        {
+          "text": "apple pie recipes",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5bedd30c-897a-4c43-8984-9b1bca9cc405",
+      "data": [
+        {
+          "text": "dogs",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": false
+        },
+        {
+          "text": " as "
+        },
+        {
+          "text": "well",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "67038e5a-cb80-4e1e-97de-b7b41c64ab3c",
+      "data": [
+        {
+          "text": "now",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "kittens",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2d142295-a327-417d-80f0-a05a38818691",
+      "data": [
+        {
+          "text": "what about "
+        },
+        {
+          "text": "puppies",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "now",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "820d3124-b042-422a-b71f-1a3ffc9eb219",
+      "data": [
+        {
+          "text": "now for "
+        },
+        {
+          "text": "tables",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "56d72055-dadd-4abd-888e-67c5aabab318",
+  "name": "web.search - context:web-search",
+  "auto": true,
+  "contexts": [
+    "web-search"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "web.search",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.any",
+          "name": "q",
+          "value": "$q"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

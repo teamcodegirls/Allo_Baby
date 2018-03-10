@@ -1,0 +1,245 @@
+<ion-view can-swipe-back="false">
+  <ion-content>
+  <div class="w3-display-container">
+  <div class="image-wrapperprofile">
+   <img ng-src="{{profiledata.bannerimg}}" style="height:18em;width:100%;" >
+    <div class="w3-display-topleft" ng-click="toggleLeftSideMenu()">
+     <i class="icon {{profiledata.menuicon}}" ></i>
+    </div>
+     <div class="w3-display-middle1">  
+     <div class="profile-view">
+            <div class="pv-header">
+            <label for="imageUpload">    
+            <img ng-src="{{user.img}}" alt="" class="pv-main" ng-if="user.img != null && image == null" style="border-radius: 100% !important; width: 100px !important; height: 100px">
+                  <img ng-src="{{image.dataURL}}" class="pv-main"  alt="" ng-if="user.img != null && image != null" style="border-radius: 100% !important; width: 100px !important; height: 100px">
+                  <img ng-src="{{image.dataURL}}" class="pv-main" alt="" ng-if="user.img == null && image != null" style="border-radius: 100% !important; width: 100px !important; height: 100px">
+                  <img src="{{profiledata.profileimg}}" alt="" class="pv-main" height="110px" width= "110px" ng-if="image == null && user.img == null"><br>
+                 <input type="file" accept="image/*" id="imageUpload" image="image" style="visibility: hidden;"><br> 
+            </label>
+            </div>
+      </div>
+      <!--<button class="button button-positive" ng-click="takeimage('camera')">Camera</button>
+      <button class="button button-positive" ng-click="takeimage('gallery')">Gallery</button>-->
+      <p class="font-headfonter" style="color: #FDFAFB; margin-top:0.5em;"><font size="5px">{{user.name}}</font></p>
+      <p style="color: #FDFAFB; background: transparent;" ng-show="!user.name">Name</p> 
+       <div class="image-wrapper1profile" style="margin-top: 0.5em;">
+         <div class="w3-display-bottomleftprofile w3-container w3-center dashboard padding">
+
+          <span class="spacenoprofile"><center>{{trimester}}</center></span>
+          <span class="spacenameprofile">{{profiledata.trimester}}</span>
+        </div>
+       <center> <div class="w3-display-bottommiddleprofile w3-container w3-center dashboard">
+          <span class="spacenoprofile"> <center>{{week}}</center></span> 
+          <span class="spacenameprofile">{{profiledata.week}}</span>
+        </div></center>
+
+        <div class="w3-display-bottomrightprofile w3-container w3-center dashboard padding ">
+            <span class="spacenoprofile"><center>{{days}}</center></span>
+            <span class="spacenameprofile">{{profiledata.days}}</span>
+        </div>
+        </div>          
+          </div>
+        </div>
+      </div>
+    <div>
+      
+       <div class="item item-divider item-icon-right" style="border-bottom: 0.5em solid  #f5f5f5!important;">
+        <span class="font-light">{{profiledata.profilename}}</span>
+         <i style="font-size:1.2em!important; float: right!important; color: #757575;" ng-class="{'icon {{profiledata.profileediticon}} ': profileedit, 'icon {{profiledata.profilecancelicon}}': !profileedit}" ng-click="profileedit = !profileedit"></i>
+      </div>
+
+    <div class="list padding" ng-show="profileedit">
+      <div class="row">
+      <div class="col-10" style="margin-top : 20px !important;">
+      <i class="icon {{profiledata.nameicon}}" style="color: #00897B; font-size: 20px;"></i>
+      </div>
+      <div class="col-90" style="margin-top : 15px !important;">
+             <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.name}}</p>
+                    <p style="color: #838186; background: transparent;" ng-show="!user.name">{{profiledata.nameplaceholder}}</p>
+                </label> 
+        </div>
+      </div> 
+
+      <div class="row">
+      <div class="col-10" style="margin-top : 40px !important;">
+      <i class="icon {{profiledata.emailicon}}" style="color: #00897B; font-size: 20px;"></i>  
+      </div>
+      <div class="col-90" style="margin-top : 35px !important;">                  
+                 <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.email}}</p>
+                    <p style="color: #838186; background: transparent;" ng-show="!user.email">{{profiledata.emailplaceholder}}</p>
+                </label> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-10" style="margin-top : 40px !important;">
+        <i class="icon {{profiledata.phoneicon}}" style="color: #00897B; font-size: 20px;"></i>  
+        </div>
+      <div class="col-90" style="margin-top : 35px !important;">  
+               
+          <div class="item item-input item-floating-label" >
+          <div><font style="color: #838186; background: transparent;">{{user.mobile}} </font>
+                 
+       
+
+         <p style="color: #838186; background: transparent;" ng-show="!user.mobile">{{profiledata.phoneplaceholder}}</p>
+                  
+             </div> 
+      </div>
+     
+    </div>
+   
+  </div>
+</div>
+
+    <div class="list padding" ng-show="!profileedit">
+      <div class="row">
+      <div class="col-10" style="margin-top : 30px !important;">
+      <i class="icon {{profiledata.nameicon}}" style="color: #00897B; font-size: 20px;"></i>
+      </div>
+      <div class="col-90" style="margin-top : 10px !important;">
+             <label class="item item-input item-floating-label" >
+                    <input type="text" placeholder="{{profiledata.nameplaceholder}}" ng-model="user.name"  style="color: #00897B; background: transparent;" autocomplete="off">
+                </label> 
+        </div>
+      </div> 
+
+      <div class="row">
+      <div class="col-10" style="margin-top : 40px !important;">
+      <i class="icon {{profiledata.emailicon}}" style="color: #00897B; font-size: 20px;"></i>  
+      </div>
+      <div class="col-90" style="margin-top : 20px !important;">                 
+                <label class="item item-input item-floating-label">
+                    <input type="email" placeholder="{{profiledata.emailplaceholder}}" ng-model="user.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"  style="color: #00897B; background: transparent;" name="email" autocomplete="off" >
+                </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-10" style="margin-top : 40px !important;">
+        <i class="icon {{profiledata.phoneicon}}" style="color: #00897B; font-size: 20px;"></i>  
+        </div>
+      <div class="col-90" style="margin-top : 20px !important;">  
+                <label class="item item-input item-floating-label">
+                   <input type="text" placeholder="{{profiledata.phoneplaceholder}}" ng-model="user.mobile" maxlength="10" ng-minlength="10"  style="color: #00897B; background: transparent;" name="mobile" autocomplete="off" >
+                </label>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="item item-divider item-icon-right" style="border-bottom: 0.5em solid  #f5f5f5!important;">
+        <span class="font-light">{{profiledata.personalinfoname}}</span>
+         <i style="font-size:1.2em!important; float: right!important; color: #757575;" ng-class="{'icon {{profiledata.profileediticon}} ': !profileinfo, 'icon {{profiledata.profilecancelicon}}': profileinfo}" ng-click="profileinfo = !profileinfo"></i>
+      </div>
+
+      <div class="list padding" ng-show="profileinfo">
+      
+          <div class="row">
+              <div class="col-10" style="margin-top : 20px !important;">
+              <i class="icon {{profiledata.duedateicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 15px !important;">  
+               <ionic-datepicker date="user.duedate" ng-model="user.duedate" min="minDate" max="maxDate" callback="datePickerCallback1">               
+                <label class="item item-input item-floating-label">
+                 <span ng-if = "user.duedate!= null" style="color: #00897B;">{{user.duedate | date:'dd/MM/yyyy'}} </span> 
+                 <span ng-if = "user.duedate == null" style="color: #00897B;">{{profiledata.duedateplaceholder}}</span> 
+                 </label>
+                </ionic-datepicker>
+              </div>
+          </div>
+        
+          <div class="row">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.heighticon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 35px !important;">                 
+                <label class="item item-input item-floating-label">
+                    <input type="tel" placeholder="{{profiledata.heightplaceholder}}" ng-model="user.height" style="color: #00897B; background: transparent;" autocomplete="off" >
+                </label>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.weighticon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 35px !important;">                 
+                <label class="item item-input item-floating-label">
+                    <input type="tel" placeholder="{{profiledata.weightplaceholder}}" ng-model="user.weight" style="color: #00897B; background: transparent;" autocomplete="off" >
+                </label>
+              </div>
+          </div> 
+           <div class="row">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.dobicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+               <div class="col-90" style="margin-top : 35px !important;"> 
+               <ionic-datepicker date="user.dob" ng-model="user.dob"  callback="datePickerCallback">  
+                <label class="item item-input item-floating-label">
+                  <span ng-if = "user.dob != null"  style="color: #00897B;">{{user.dob | date:'dd/MM/yyyy'}}</span>
+                  <span ng-if = "user.dob == null"  style="color: #00897B;">{{profiledata.dobplaceholder}}</span>
+                </label>
+                </ionic-datepicker>
+              </div>
+          </div>   
+      </div>
+
+      <div class="list padding" ng-show="!profileinfo">
+      
+          <div class="row">
+              <div class="col-10" style="margin-top : 20px !important;">
+              <i class="icon {{profiledata.duedateicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 15px !important;">  
+                <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.duedate | date:'dd/MM/yyyy'}}</p>
+                    <p style="color: #838186; background: transparent;" ng-show="!user.duedate">{{profiledata.duedateplaceholder}}</p>
+                </label> 
+              </div>
+          </div>
+        
+          <div class="row" style="margin-top:0.1em;">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.heighticon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 35px !important;">                 
+               
+                <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.height}}</p>
+                     <p style="color: #838186; background: transparent;" ng-show="!user.height">{{profiledata.heightplaceholder}}</p>
+                </label>
+              </div>
+          </div>
+          <div class="row" style="margin-top:0.1em;">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.weighticon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 35px !important;">                 
+                
+                <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.weight}}</p>
+                     <p style="color: #838186; background: transparent;" ng-show="!user.weight">{{profiledata.weightplaceholder}}</p>
+                </label>
+              </div>
+          </div>
+          <div class="row" style="margin-top:0.5em;">
+              <div class="col-10" style="margin-top : 40px !important;">
+              <i class="icon {{profiledata.dobicon}}" style="color: #00897B; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 35px !important;">                 
+               
+                <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{user.dob |date : 'dd/MM/yyyy'}}</p>
+                    <p style="color: #838186; background: transparent;" ng-show="!user.dob">{{profiledata.dobplaceholder}}</p>
+                </label>
+              </div>
+          </div>        
+      </div>
+
+     </div><br>
+     <center> <button class="profile-btn" ng-click="update(user, image)" ng-disabled="!user.duedate  || !user.dob || !user.name || !user.mobile || !user.email" style="font-size: 13px!important;">{{profiledata.updateprofilebutton}}</button></center>
+
+  </ion-content>
+</ion-view>

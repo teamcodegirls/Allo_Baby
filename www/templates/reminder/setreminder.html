@@ -1,0 +1,53 @@
+<ion-view view-title="{{mealreminder.title}}" hide-back-button="true">
+    <ion-header-bar align-title="left" class="bar-pink">
+      <div class="buttons">
+        <button class="button button-icon button-clear {{mealreminder.menuicon}}" ng-click="goback()"></button>
+      </div>
+          <h1 class="title" style="font-size:18px;padding-top:3px;padding-left: 1.5em;">{{mealreminder.title}}</h1>
+            <div class="buttons">
+             <a class="button button-clear padding-right" style="padding-top: 5px;" ng-click="set()">
+              <font color="#FFFFFF" size="5px"><i class="{{mealreminder.headericon}}"></i></font></a>
+            </div>
+    </ion-header-bar>
+            <ion-content class="padding">
+                
+          <ion-list>
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.breakfast" ng-change="breakfastfun(filter.breakfast)">
+              <span class="font-head"> {{mealreminder.data.breakfast}}</span>
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+            <span class="font-light" style="background-color:#fff;"><input type="time" id="time1" ng-model="time1" ng-change="time1fun(time1)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.breakfast == false && {'color': '#444'} || filter.breakfast == true && {'color': '#FF4081'}"></span>
+            </label>
+        
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.msnack" ng-change="msnackfun(filter.msnack)">
+              <span class="font-head"> {{mealreminder.data.morningsnack}}</span>
+          </ion-checkbox>
+          
+          <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time2" ng-model="time2" ng-change="time2fun(time2)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.msnack == false && {'color': '#444'} || filter.msnack == true && {'color': '#FF4081'}"></span></label>
+          
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.lunch" ng-change="lunchfun(filter.lunch)">
+              <span class="font-head"> {{mealreminder.data.lunch}}</span>
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time3" ng-model="time3" ng-change="time3fun(time3)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.lunch == false && {'color': '#444'} || filter.lunch == true && {'color': '#FF4081'}"></span></label>
+          
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.esnack" ng-change="esnackfun(filter.esnack)">
+             <span class="font-head">{{mealreminder.data.eveningsnack}}</span>
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time4" ng-model="time4" ng-change="time4fun(time4)" style="background-color:#fff;color: #444;font-size: 14px!important;" ng-style="filter.esnack == false && {'color': '#444'} || filter.esnack == true && {'color': '#FF4081'}"></span></label>
+            
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.dinner" ng-change="dinnerfun(filter.dinner)">
+              <span class="font-head">{{mealreminder.data.dinner}}</span> 
+          </ion-checkbox>
+             
+           <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time5" ng-model="time5" ng-change="time5fun(time5)" style="background-color:#fff;color: #444;font-size: 14px!important;" ng-style="filter.dinner == false && {'color': '#444'} || filter.dinner == true && {'color': '#FF4081'}"></span></label>
+       </ion-list>
+
+            </ion-content>
+</ion-view>

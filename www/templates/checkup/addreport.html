@@ -1,0 +1,96 @@
+<ion-view class="layout">
+    <ion-header-bar align-title="left" class="bar-pink">
+        <div class="buttons">
+          <button class="button button-icon button-clear {{addreportdata.headericon}}" ng-click="goback()">
+        </div>
+       
+           <h1 class="title" style="font-size:19px;padding-top:3px; padding-left:1.5em;">{{addreportdata.headertext}}</h1>
+        
+       
+    </ion-header-bar>
+<!--<ion-modal-view>
+   <ion-header-bar class="bar-pink">
+      <h1 class="title" style="color:white;">{{addreportdata.headertext}}</h1>
+      <button class="button button-clear right" style="padding-top:5px;text-transform: capitalize !important; padding-right: 1em !important;" ng-click="closeModal3()"><i class="{{addreportdata.menuicon}}"></i></button>
+    </ion-header-bar>-->
+    <ion-content class="padding has-header layout">
+    <br>
+
+      <ion-list >
+      
+      <div class="card padding" style="height: 12.3em !important;" ng-show="image == null">
+          <div class="row">
+              <div class="col-10" style="margin-top : 15px !important;">
+              <i class="icon {{addreportdata.scanreporticon}}" style="color: #673AB7; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90">
+                <label class="item item-input item-floating-label" >
+                    <input type="text" placeholder="{{addreportdata.scanreportplaceholder}}" ng-model="scan.title"  style="color: gray; background: transparent; border: transparent;" autocomplete="off">
+                </label>
+              </div>
+          </div>
+          <br>
+
+         <div class="profile-view3" >
+                <div class="pv-header3">
+                      <label for="filesample" class="profile-btn" style="border-radius : 100% !important; height : 50px; width: 50px; position: fixed; top: 0px; right: 28px; margin-top: 11em !important; background : #DE2872 !important; border-color: #DE2872;">
+
+                      <span class="pv-main3" style="float: center !important; margin-left:0em !important;"><font size="5.7em" color="#fff"><i class="icon ion-upload"></i></font></span>
+                         
+                          <input type="file" id="filesample" accept="image/*" image="image" style="visibility: hidden;">
+
+                        </label>
+
+                          
+                </div>
+                
+
+          </div>
+
+
+      </div>
+      <div class="card padding" style="height: 10em !important;" ng-show="image != null">
+          <div class="row">
+              <div class="col-10" style="margin-top : 15px !important;">
+              <i class="icon {{addreportdata.scanreporticon}}" style="color: #673AB7; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90">
+                <label class="item item-input item-floating-label" >
+                    <input type="text" placeholder="{{addreportdata.scanreportplaceholder}}" ng-model="scan.title"  style="color: gray; background: transparent; border: transparent;" autocomplete="off">
+                </label>
+              </div>
+          </div>
+          <br>
+        
+         
+          <div class="profile-view3" >
+                <div class="pv-header3">
+                      <label for="filesample" class="profile-btn" style="border-radius : 100% !important; height : 50px; width: 50px; position: fixed; top: 0px; right: 28px; margin-top: 9em !important; background : #DE2872 !important; border-color: #DE2872;">
+
+                      <span class="pv-main3" style="float: center !important; margin-left:0em !important;"><font size="5.7em" color="#fff"><i class="icon ion-upload"></i></font></span>
+                         
+                          <input type="file" id="filesample" accept="image/*" image="image" style="visibility: hidden;">
+
+                        </label>
+
+                          
+                </div>
+                
+
+          </div>
+
+
+      </div>
+      <br>
+      <div class="card padding" ng-show="image != null">
+          <div ng-if="image != null">
+             <center>   <img src="{{image.dataURL}}" style="width: 200px !important; height: 200px;"></center>
+          </div>
+      </div>    
+      <center> <button class="profile-btn" ng-click="addscan(scan, image)" ng-disabled="!scan.title || !image" style="font-size: 13px!important; margin-top: 2em !important;">{{addreportdata.addscanreportbutton}}</button></center>
+
+
+
+       </ion-list>
+    </ion-content>
+  </ion-view>

@@ -1,0 +1,73 @@
+<ion-view class="layout">
+    <ion-header-bar align-title="left" class="bar-pink">
+        <div class="buttons">
+          <button class="button button-icon button-clear {{checkupdetaildata.headericon}}" ng-click="goback()">
+        </div>
+       
+           <h1 class="title" style="font-size:19px;padding-top:3px; padding-left:1.5em;">{{checkupdetaildata.headertext}}</h1>
+        
+        <div class="buttons">
+          <button class="button button-clear padding-right" style="padding-top: 5px; padding-right : 0.9em!important;" ng-click="add()">
+          <font color="#FFFFFF" size="5px"><i class="{{checkupdetaildata.listicon}}"></i></font></button>
+        </div>
+    </ion-header-bar>
+  <ion-content>
+      <div class="list" style="margin-top : 1em !important;">
+      <div class="card padding">
+          <div class="row padding">
+              <div class="col-10" style="margin-top : 30px !important;">
+                  <i class="icon ion-calendar" style="color: #673AB7; font-size: 20px;"></i>
+              </div>
+              <div class="col-90" style="margin-top : 25px !important;">
+                  <label class="item item-input item-floating-label" >
+                    <p style="color: #838186; background: transparent;">{{data.checkupdate}} &nbsp; {{data.checkuptime}}</p>                    
+            </label> 
+        </div>
+      </div>
+
+      <div class="row padding">
+              <div class="col-10" style="margin-top : 20px !important;">
+              <i class="icon ion-compose" style="color: #673AB7; font-size: 20px;"></i>  
+              </div>
+              <div class="col-90" style="margin-top : 5px !important;">                 
+                <label class="item item-input item-floating-label">
+                  <textarea class="form-control" ng-model="data.notes" placeholder="Enter Doctor Feedback" autocomplete="off" style="background:transparent;color: #000000; font-size: 15px; margin-top: 12px;"></textarea>
+                </label>
+              </div>
+      </div>
+      </div>
+      <div class="item item-divider item-icon-right" style="border-bottom: 0.5em solid  #f5f5f5!important; margin-top: 1em !important;">
+         <div style="margin-top: 0.5em !important;">
+            <span class="font-light">{{checkupdetaildata.bodytext}}</span>
+         </div>
+      </div>
+      </div>
+      <div ng-if="scandata.length === 0">
+        <br>
+        <center><p class="font-light" style="margin-top : 2em !important; padding-bottom : 2em !important;">{{checkupdetaildata.infotext}}</p></center>
+      </div> 
+      
+
+      
+    <div ng-if="scandata.length !== 0" ng-repeat="data in scandata" id="wrappers" class="wrappering">
+     <div class="card">
+
+      <img class="imgfull" ng-src="{{data.file}}" height="100px" style="border-bottom: 1px solid gray;" alt="Loading..."> 
+       <div class="del" ><a ng-click="remove(data)"><i class="ion ion-android-close"  style="color: #ffffff; font-size: 17px; margin-left: 0.5em"></i></a></div>
+       <p class="font-light" style="margin-left : 1em; margin-top: 1em; margin-right : 1em;">{{data.title}}</p>
+     </div> 
+    
+     </div>
+
+
+    <div class="float-button" style="padding-right: 1.5em;">
+     <span class="height-fix">
+       <button id="fab-profile" class="button button-fab button-fab-bottom-right fab-fixed button-positive pane" ui-sref="app.addreport" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px); ">
+         <i class="icon {{checkupdetaildata.fabicon}}"></i>
+       </button>
+     </span>
+    </div>
+   
+ </ion-content>
+ 
+</ion-view>

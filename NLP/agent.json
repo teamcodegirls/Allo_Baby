@@ -1,0 +1,36 @@
+{
+  "description": "Giving your users access information on the web is just an ask away with this agent. Let your users find a recipe for a last minute dinner or locate that article they were talking about. Help them prove they\u0027re right (or wrong) with a quick ask.",
+  "language": "en",
+  "shortDescription": "Perform a web search",
+  "examples": "User: Google a recipe for tomato soup.\nUser: Find Metropolitan Museum on Wikipedia.\nUser: Look up Monty Python.\nUser: Can you search for information?\nUser: Google how to cook dinner.\nUser: Find Lady Gaga\u0027s husband on the Internet.",
+  "displayName": "Web Search",
+  "enabledDomainFeatures": [],
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "invocationName": "Hello Baby",
+    "project": "allobaby-hukpkx",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "FEMALE_1",
+    "capabilities": [],
+    "protocolVersion": "V1"
+  },
+  "defaultTimezone": "",
+  "webhook": {
+    "url": "https://echo-google.herokuapp.com/ai",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true
+  },
+  "isPrivate": false,
+  "customClassifierMode": "use.instead",
+  "mlMinConfidence": 0.3
+}

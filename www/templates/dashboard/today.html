@@ -1,0 +1,78 @@
+<ion-view view-title="{{today.headertext}}" class="layout" hide-back-button="true">
+ <ion-header-bar align-title="left" class="bar-pink">
+  <div class="buttons">
+    <button class="button button-icon button-clear {{today.menuicon}}" ng-click="toggleLeftSideMenu()"></button>
+  </div>
+  <h1 class="title" style="font-size:19px;padding-top:3px;padding-left: 1.5em;">AlloMom</h1>
+</ion-header-bar>
+<ion-content has-bouncing="true" class="has-header has-footer"><br>
+              
+            
+                   <div ng-repeat="message in datas" class="message-wrapper">
+                       
+                        <div ng-if="message.direction == 'left'">
+                            
+                          <img class="profile-pic left" ng-src="{{message.img}}">
+            
+                            <div class="chat-bubble left" >
+                                <div ng-show="message.extraimg">
+                                  <img src = "{{message.extraimg}}" style="height:100px; weight:100px; ">
+                                   </div>
+                                <div class="message" ng-bind-html="message.text | nl2br" autolinker>
+                                </div>
+            
+                                <div class="message-detail">
+                                    <span class="bold">{{message.username}}</span>,
+                                    <span style="font-family:timesnewroman;">{{message.time}}</span>
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                        <div ng-if="message.direction == 'right'">
+                          
+                         <img class="profile-pic right" ng-src="{{message.img}}">
+                            
+                            <div class="chat-bubble right" >
+                                <img src = "{{message.repimg}}" style="height:100px; weight:100px; "  ng-show="message.repimg">
+                                <div class="message" ng-bind-html="message.text | nl2br" autolinker>
+                                </div>
+            
+                                <div class="message-detail">
+                                    <span class="bold">{{message.username}}</span>,
+                                    <span style="font-family:timesnewroman;">{{message.time}}</span>
+                                </div>
+            
+                            </div>
+                          
+                        </div>
+            
+                        <div class="cf" ></div>
+            
+                    </div>
+      
+             
+
+          </ion-content>
+          <form name="form">
+              <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
+                <label class="item-input-wrapper">
+                      <input type="text" placeholder="{{messageplaceholder}}"  ng-model="input.text" style="margin-bottom : 0.5em !important;">
+                         
+                </label>
+                
+                   
+                <!-- <button  for="imageUpload" class="button  button-clear ion-android-attach gly-rotate-45" style="margin-left : 0.5em !important; margin-right: 2.5em !important; font-size: 1.2em !important;"></button>
+                <input type="file" accept="image/*" id="imageUpload" image="image">-->
+
+                
+                    <label for="fileinput" style="margin-left: 1em !important;" ng-show="viewimgicon == true">
+                        <img src="img/attach.png" id="reportimage" style="height : 1.5em !important;" />
+                    
+
+                       <input  type="file" accept="image/*" image="image" id="fileinput" style="display: none !important;" /></label>
+            
+                   <button class="button button-clear" ng-disabled="!input.text || input.text === ''" ng-click="send(input, image)" style="color:#000 !important;  text-transform: inherit; margin-top : 0.2em !important;">Send</button>
+              </ion-footer-bar>
+          </form>
+</ion-view>

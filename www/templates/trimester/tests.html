@@ -1,0 +1,28 @@
+<ion-view view-title="{{test.headertext}}" hide-back-button="true" class="layout">
+<ion-header-bar align-title="left" class="bar-pink">
+  <div class="buttons">
+    <button class="button button-icon button-clear {{test.menuicon}}" ng-click="toggleLeftSideMenu()">
+  </div>
+  <h1 class="title" style="font-size:18px;padding-top:3px;padding-left: 1.5em;">{{test.headertext}}</h1>
+</ion-header-bar>
+  <ion-content class="has-header" ng-controller="testCtrl">
+      <ion-slide-box slide-tabs-scrollable="true" show-pager="false" ion-slide-tabs2>
+                <ion-slide ion-slide-tab-label2="{{test.tab1text}}">
+                <div ng-include src="'templates/trimester/trimester1.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+                <ion-slide ion-slide-tab-label2="{{test.tab2text}}">
+                <div ng-include src="'templates/trimester/trimester2.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+               <ion-slide ion-slide-tab-label2="{{test.tab3text}}">
+                <div ng-include src="'templates/trimester/trimester3.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+        </ion-slide-box>      
+  </ion-content>
+
+</ion-view>

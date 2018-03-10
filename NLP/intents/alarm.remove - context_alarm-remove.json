@@ -1,0 +1,189 @@
+{
+  "userSays": [
+    {
+      "id": "406c44e7-b73e-4a78-b65e-cb55f2cdcf9a",
+      "data": [
+        {
+          "text": "remove "
+        },
+        {
+          "text": "all",
+          "alias": "all",
+          "meta": "@all",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "them",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f31818e7-a0c1-4b87-b5a6-8bf1c6df9e94",
+      "data": [
+        {
+          "text": "delete "
+        },
+        {
+          "text": "all",
+          "alias": "all",
+          "meta": "@all",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2a847f97-0243-45e6-acf1-a910cd3a2fa2",
+      "data": [
+        {
+          "text": "now the one for "
+        },
+        {
+          "text": "9 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a1a5bdc6-79a3-4f2d-90cb-45838b3cb08c",
+      "data": [
+        {
+          "text": "remove for 7 "
+        },
+        {
+          "text": "am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5ca64d8f-e11d-4a1e-b5dc-c2bb45c8191a",
+      "data": [
+        {
+          "text": "erase",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " too"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "13601afa-94d7-46c6-8326-15466729ab18",
+      "data": [
+        {
+          "text": "the one for "
+        },
+        {
+          "text": "Saturday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " too"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3fc21b26-9ce2-4eb9-9b3e-9cc402d07b5b",
+      "data": [
+        {
+          "text": "turn off "
+        },
+        {
+          "text": "the one",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "every Sunday",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ccb03ac4-6dd3-4ed3-a17d-786b779e63bb",
+  "name": "alarm.remove - context:alarm-remove",
+  "auto": true,
+  "contexts": [
+    "alarm-remove"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.remove",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date"
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence"
+        },
+        {
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

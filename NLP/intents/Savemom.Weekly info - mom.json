@@ -1,0 +1,183 @@
+{
+  "userSays": [
+    {
+      "id": "df3e233b-8c45-4b5c-9c76-b80c9b7081d0",
+      "data": [
+        {
+          "text": "what has happened in "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "10",
+          "alias": "number-integer",
+          "meta": "@sys.number-integer",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fbad0645-667e-4ce9-8f5f-fa9f061f4e97",
+      "data": [
+        {
+          "text": "what will happen in "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "10",
+          "alias": "number-integer",
+          "meta": "@sys.number-integer",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1678cfb2-55e7-4396-a07e-58e55017b266",
+      "data": [
+        {
+          "text": "What is happening "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6b1d6e54-5af0-4dd3-887d-089844644711",
+      "data": [
+        {
+          "text": "Tell me more about what is happening to me "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7a08568d-5fee-4d07-91c8-dc00d39e33b5",
+      "data": [
+        {
+          "text": "What changes can I expect in my body "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "1d24b67f-4334-41e1-915d-6a979394672c",
+  "name": "Savemom.Weekly info - mom",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "momweekinfo",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.date-time",
+          "name": "date-time",
+          "value": "$date-time",
+          "isList": false
+        },
+        {
+          "dataType": "@weekno",
+          "name": "weekno",
+          "value": "$weekno",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.number-integer",
+          "name": "number-integer",
+          "value": "$number-integer",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

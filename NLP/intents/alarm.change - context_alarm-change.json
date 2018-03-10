@@ -1,0 +1,242 @@
+{
+  "userSays": [
+    {
+      "id": "43251c68-61a2-4960-9d1e-4cf623648023",
+      "data": [
+        {
+          "text": "from "
+        },
+        {
+          "text": "weekdays",
+          "alias": "recurrence-from",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence-to",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b9b90f78-c029-480a-833f-b400c306eab6",
+      "data": [
+        {
+          "text": "from "
+        },
+        {
+          "text": "Tuesday",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Monday",
+          "alias": "date-to",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5c48186f-4426-41a8-8123-bf2e8e84746a",
+      "data": [
+        {
+          "text": "and from "
+        },
+        {
+          "text": "10 am",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "9 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0d5ae0aa-a21b-4b46-a280-ab0ce465e9a2",
+      "data": [
+        {
+          "text": "to "
+        },
+        {
+          "text": "10 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "aab87659-cc27-44a0-98e2-0da66dcb30fd",
+      "data": [
+        {
+          "text": "no the one on "
+        },
+        {
+          "text": "Monday",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "656ce2bb-3c68-460f-b993-6a22388a71a2",
+      "data": [
+        {
+          "text": "to",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Shape Of You",
+          "alias": "song",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "96963af3-4023-4b97-938a-8a7d94b8895b",
+      "data": [
+        {
+          "text": "to "
+        },
+        {
+          "text": "every weekend",
+          "alias": "recurrence-to",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "77ce7e49-4e82-4237-a735-8dc7728e2e28",
+      "data": [
+        {
+          "text": "no to "
+        },
+        {
+          "text": "10 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1808d83e-4762-41f2-9d03-eb37b4a02bc5",
+      "data": [
+        {
+          "text": "the one at "
+        },
+        {
+          "text": "10 am",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "726b52a6-3fec-4e5f-8b0d-f1455176686d",
+  "name": "alarm.change - context:alarm-change",
+  "auto": true,
+  "contexts": [
+    "alarm-change"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.change",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.time",
+          "name": "time-from",
+          "value": "$time-from"
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time-to",
+          "value": "$time-to"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date-from",
+          "value": "$date-from"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date-to",
+          "value": "$date-to"
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence-from",
+          "value": "$recurrence-from"
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence-to",
+          "value": "$recurrence-to"
+        },
+        {
+          "dataType": "@sys.any",
+          "name": "song",
+          "value": "$song",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

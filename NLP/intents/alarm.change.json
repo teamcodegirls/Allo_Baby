@@ -1,0 +1,764 @@
+{
+  "userSays": [
+    {
+      "id": "55656cac-3417-4257-8ba5-9099bb1c3a4d",
+      "data": [
+        {
+          "text": "I need to change my "
+        },
+        {
+          "text": "5 am",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "7 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0cd218a6-976a-4d8d-b9e7-7a92e35c1e1f",
+      "data": [
+        {
+          "text": "move my "
+        },
+        {
+          "text": "Work",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "9 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b65ffc94-83cb-4abd-a64d-4efa41e9159d",
+      "data": [
+        {
+          "text": "how can I modify my "
+        },
+        {
+          "text": "daily",
+          "alias": "recurrence-from",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "380b4edd-ad07-4258-9343-343aee85bf1d",
+      "data": [
+        {
+          "text": "I\u0027d like to customize my "
+        },
+        {
+          "text": "07:45",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cd13ee39-958c-499f-ad09-f876c709c3e3",
+      "data": [
+        {
+          "text": "manage alarms"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bd86a630-e608-48a9-87bc-b76c8ee3f81b",
+      "data": [
+        {
+          "text": "reschedule the "
+        },
+        {
+          "text": "6 pm",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "7 pm",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e9e82372-9a49-491f-8a87-404e4f56d45a",
+      "data": [
+        {
+          "text": "edit alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "7b6f7bc8-cf9b-4f2f-af21-afc325b05746",
+      "data": [
+        {
+          "text": "reschedule an alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8978bf31-d268-48f8-87f0-c679e888b4c0",
+      "data": [
+        {
+          "text": "move my alarm from "
+        },
+        {
+          "text": "Friday",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "6 pm",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Saturday",
+          "alias": "date-to",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "7 pm",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0cf15abe-b82f-462d-b1cf-9b1a0f3a2086",
+      "data": [
+        {
+          "text": "I\u0027d like to customize my alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "950a173a-123f-4f82-a116-8bdf6028699e",
+      "data": [
+        {
+          "text": "change the "
+        },
+        {
+          "text": "8:45",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm music to "
+        },
+        {
+          "text": "Let Me Love You",
+          "alias": "song",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "af3ce8b9-25a4-487c-bc57-2253a1d1430d",
+      "data": [
+        {
+          "text": "change "
+        },
+        {
+          "text": "6 am",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "7 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "41900596-8526-430f-a06d-a8c9881d88af",
+      "data": [
+        {
+          "text": "edit the "
+        },
+        {
+          "text": "wake",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "up",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " time"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a3e4775a-62b5-4a7e-94fa-58e4ccc9aeed",
+      "data": [
+        {
+          "text": "how can I change the "
+        },
+        {
+          "text": "wake",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "up",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "music",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d86cfe91-4cda-4fe4-b8b2-63d7bb555664",
+      "data": [
+        {
+          "text": "change the alarm "
+        },
+        {
+          "text": "music",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "68bb4546-fbf5-41e9-85b0-769499a4d929",
+      "data": [
+        {
+          "text": "edit the "
+        },
+        {
+          "text": "ringtone",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " for my alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c2f23fef-25b7-4a42-b2c6-2fea90c14ba0",
+      "data": [
+        {
+          "text": "change "
+        },
+        {
+          "text": "all",
+          "alias": "all",
+          "meta": "@all",
+          "userDefined": true
+        },
+        {
+          "text": " my alarms"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b6903482-0d0b-439f-862a-0c89bbc6cf1b",
+      "data": [
+        {
+          "text": "I\u0027d like to reschedule "
+        },
+        {
+          "text": "all",
+          "alias": "all",
+          "meta": "@all",
+          "userDefined": true
+        },
+        {
+          "text": " my alarms"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3e5142fd-c7e6-4b2f-8ca1-9d6104bef0fb",
+      "data": [
+        {
+          "text": "edit my "
+        },
+        {
+          "text": "6:10",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b498f9dc-828f-4389-a35a-6db27f30a03f",
+      "data": [
+        {
+          "text": "could you change the "
+        },
+        {
+          "text": "8:30",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cc5df1a2-2408-47a0-baf7-75d182a529ae",
+      "data": [
+        {
+          "text": "change my "
+        },
+        {
+          "text": "Tuesday",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d06289fb-b913-4a01-b23c-fdd6c52bf97d",
+      "data": [
+        {
+          "text": "edit my alarm for "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dd405025-a0c5-462f-94cb-6e14670b6686",
+      "data": [
+        {
+          "text": "change my alarm to "
+        },
+        {
+          "text": "3 pm",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2e33abc8-a74e-4f6f-b2b7-cffdc6ebcb22",
+      "data": [
+        {
+          "text": "I\u0027d like to change my alarm to "
+        },
+        {
+          "text": "8:30 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "acb46123-1beb-4840-9338-6865c3a17d87",
+      "data": [
+        {
+          "text": "rename my "
+        },
+        {
+          "text": "Work",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "be0d8bd3-762f-44b3-9528-7adede32000c",
+      "data": [
+        {
+          "text": "move my "
+        },
+        {
+          "text": "4:00 am",
+          "alias": "time-from",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "5:30",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c99e2700-ad8c-40aa-9769-cae43adeb4e3",
+      "data": [
+        {
+          "text": "rename my "
+        },
+        {
+          "text": "Gym",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "Sports",
+          "alias": "alarm-name-to",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9d4f3ff5-1fa0-4a86-b6ce-81abb06c5dda",
+      "data": [
+        {
+          "text": "edit the wake up call song to "
+        },
+        {
+          "text": "Yellow Submarine",
+          "alias": "song",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d13e1b5c-f36d-4d91-acd0-bf1b223dda8f",
+      "data": [
+        {
+          "text": "reschedule my "
+        },
+        {
+          "text": "daily",
+          "alias": "recurrence-from",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence-to",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time-to",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "72b7d5f7-dd6e-4208-bfa1-ae8b0561e232",
+      "data": [
+        {
+          "text": "change my "
+        },
+        {
+          "text": "daily",
+          "alias": "recurrence-from",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " alarm recurrence to "
+        },
+        {
+          "text": "every Sunday",
+          "alias": "recurrence-to",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b3f8cca6-d640-4077-8c1e-2672a78747ba",
+      "data": [
+        {
+          "text": "edit "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence-from",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " alarm to "
+        },
+        {
+          "text": "every Tuesday",
+          "alias": "recurrence-to",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5a13976a-f668-4fc3-842a-621e441867f7",
+      "data": [
+        {
+          "text": "could you move my alarm from "
+        },
+        {
+          "text": "Friday",
+          "alias": "date-from",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Saturday",
+          "alias": "date-to",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "50bed2ca-2663-4942-92d0-10b080785ec0",
+  "name": "alarm.change",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.change",
+      "affectedContexts": [
+        {
+          "name": "alarm-change",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.date",
+          "name": "date-from",
+          "value": "$date-from",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date-to",
+          "value": "$date-to",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time-from",
+          "value": "$time-from",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time-to",
+          "value": "$time-to",
+          "isList": false
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence-from",
+          "value": "$recurrence-from",
+          "isList": false
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence-to",
+          "value": "$recurrence-to"
+        },
+        {
+          "dataType": "@sys.any",
+          "name": "alarm-name",
+          "value": "$alarm-name",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.any",
+          "name": "alarm-name-to",
+          "value": "$alarm-name-to"
+        },
+        {
+          "dataType": "@sys.any",
+          "name": "song",
+          "value": "$song",
+          "isList": false
+        },
+        {
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

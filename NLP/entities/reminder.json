@@ -1,0 +1,20 @@
+{
+  "id": "a0a7455d-f6da-40ee-85ed-04f66e6e0921",
+  "name": "reminder",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "reminder",
+      "synonyms": [
+        "walk",
+        "meal",
+        "medicine",
+        "checkup",
+        "wakeup",
+        "wake"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

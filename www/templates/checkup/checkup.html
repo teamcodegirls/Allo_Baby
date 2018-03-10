@@ -1,0 +1,26 @@
+<ion-view view-title="{{checkupinfodata.headertext}}" hide-back-button="true" class="layout">
+<ion-header-bar align-title="left" class="bar-pink">
+  <div class="buttons">
+    <button class="button button-icon button-clear {{checkupinfodata.menuicon}}" ng-click="toggleLeftSideMenu()">
+  </div>
+  <h1 class="title" style="font-size:18px;padding-top:3px;  padding-left:1.5em;">{{checkupinfodata.headertext}}</h1>
+  
+</ion-header-bar>
+
+  <ion-content class="has-header">
+      <ion-slide-box slide-tabs-scrollable="true" show-pager="false" ion-slide-tabs1>
+                <ion-slide ion-slide-tab-label1="{{checkupinfodata.tab1text}}">
+                <div ng-include src="'templates/checkup/upcoming.html'" style="height: {{Height}}px;">
+                    
+                </div>
+                </ion-slide>
+                <ion-slide ion-slide-tab-label1="{{checkupinfodata.tab2text}}">
+                <div ng-include src="'templates/checkup/completed.html'" style="height: {{Height}}px;">
+                    
+                </div>
+               </ion-slide>
+        </ion-slide-box> 
+
+  </ion-content>
+   
+</ion-view>

@@ -1,0 +1,70 @@
+<ion-view can-swipe-back="false" class="layout">
+   <ion-header-bar align-title="center" class="bar-pink">
+  <p class="title">{{getprofile.headertext}}</p>
+</ion-header-bar>
+
+  <ion-content class="padding iniLogin">
+    <form name="form">
+    <div class="list list-icon">
+          <div class="profile-view">
+            <div class="pv-header">
+                <label for="imageUpload">
+                  <img ng-src="{{image.dataURL}}" class="pv-main imgrad" alt="" ng-if="image != null">
+                  <img src="{{getprofile.cameraimg}}" class="pv-main" alt="" height="120px" ng-if="image == null">
+                  <input type="file" id="imageUpload" accept="image/*" image="image" style="visibility:hidden;">
+                </label>
+            </div>
+          </div>
+          <div class="row getpad">
+              <div class="col-10 rowicon">
+              <i class="icon {{getprofile.duedateicon}} authicon"></i>  
+              </div>
+              <div class="col-90 datepic">                 
+               <ionic-datepicker date="currentDate" ng-model="user.duedate" min="minDate" max="maxDate" callback="datePickerCallback1">
+                  <label class="item item-input item-floating-label">
+                  <span ng-if="user.duedate!=null" class="datepiclr"> {{user.duedate | date:'dd/MM/yyyy'}} </span>
+                  <span ng-if="user.duedate==null" class="datepicpad">{{getprofile.duedateplaceholder}}</span>
+                  </label>
+                </ionic-datepicker>
+              </div>
+          </div>
+        
+          <div class="row">
+              <div class="col-10 rowicon">
+              <i class="icon {{getprofile.heighticon}} authicon"></i>  
+              </div>
+              <div class="col-90 getpad">                 
+                <label class="item item-input item-floating-label">
+                    <input type="tel" placeholder="{{getprofile.heightplaceholder}}" ng-model="user.height" style="color: #838186;" autocomplete="off">
+                </label>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-10 rowicon">
+              <i class="icon {{getprofile.weighticon}} authicon"></i>  
+              </div>
+              <div class="col-90 getpad">                 
+                <label class="item item-input item-floating-label">
+                    <input type="tel" placeholder="{{getprofile.weightplaceholder}}" ng-model="user.weight" style="color: #838186;" autocomplete="off">
+                </label>
+              </div>
+          </div>
+          
+          <div class="row datepicht">
+              <div class="col-10 datepic">
+              <i class="icon {{getprofile.dobicon}} authicon"></i>  
+              </div>
+               <div class="col-90 getpad">                 
+               <ionic-datepicker date="currentDate1" ng-model="user.dob"  callback="datePickerCallback">
+                  <label class="item item-input item-floating-label">
+                  <span ng-if="user.dob!=null" class="datepiclr"> {{user.dob | date:'dd/MM/yyyy'}} </span>
+                  <span ng-if="user.dob==null" class="datepiclr">{{getprofile.dobplaceholder}}</span>
+                  </label>
+                </ionic-datepicker>
+              </div>
+          </div><br>
+          <button class="signupBtn" ng-click="getsin(user, image)" ng-disabled="!user.duedate || !user.dob">{{getprofile.letsgobutton}}</button>
+            </div>            
+      </form>      
+  </ion-content>
+</ion-view>

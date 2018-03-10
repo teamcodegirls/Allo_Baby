@@ -1,0 +1,30 @@
+{
+  "userSays": [],
+  "id": "ddeb9bca-12e9-41ba-afb0-d18f59481926",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Hi Mom, I am AlloBaby and I will be your personal maternal care assistant. Ask me anything you want and I will be there to help you."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

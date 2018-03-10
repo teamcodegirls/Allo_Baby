@@ -1,0 +1,29 @@
+<ion-view class="layout">
+  <ion-content class="ion-list">
+      <ion-item class="item-remove-animate item-avatar-left item-text-wrap" ng-repeat="data in datas | reverse" ng-if="datas.length !== 0 && data.done != true">
+      <img src="{{upcomingdata.listimg}}" style="margin-top: 0.5em;">
+      <div class="row">
+     
+      <div class="col col-80">
+        <h2>{{upcomingdata.checkup}}-{{data.day}}-{{data.month}}-{{data.year}}</h2>
+        <span class="font-small">{{upcomingdata.time}}: {{data.checkuptime}}</span> 
+       </div>
+       <div class="col col-20" style="margin-top: 0.7em;">
+       <span style="color: #FF4081; font-size: 15px;" ng-click="done(data)">{{upcomingdata.done}}</span>
+       </div> 
+
+       </div>       
+      </ion-item>
+      <div ng-if="datas.length === 0 || testflag1 == false">
+        <p class="font-lightcenter item-text-wrap">{{upcomingdata.infotext}}</p>
+      </div>
+     
+  </ion-content>
+  <div class="float-button" style="padding-right: 1.5em;">
+     <span class="height-fix">
+       <button id="fab-profile"  class="button button-fab button-fab-bottom-right fab-fixed button-positive pane" ng-click="openModal1()" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px); ">
+         <i class="icon {{upcomingdata.fabicon}}"></i>
+       </button>
+     </span>
+   </div>   
+</ion-view>

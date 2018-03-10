@@ -1,0 +1,13 @@
+<ion-view class="layout">
+<ion-content>
+  
+  <div class="card item-text-wrap">
+      <img class="imgfull" src="{{weekdata.tsimage}}" image-set-aspect ng-class="{'wide':    img.width/img.height > 1, 'tall': img.width/img.height <= 1}">
+        <div class="padding">
+                <span class="font-head">{{weeklyinfo.tips.tipsandsymptons}}</span><br><br>
+                <p class="font-light w3-justify" ng-bind-html="weekdata.tipsandsymptoms"> </p>                 
+        </div>
+    </div>
+ <br><br><br><br>
+</ion-content>
+</ion-view>

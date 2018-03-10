@@ -1,0 +1,112 @@
+{
+  "userSays": [
+    {
+      "id": "59c4f1bf-75eb-43bc-b7ce-53a90aeafecc",
+      "data": [
+        {
+          "text": "How is my baby developing?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d03707f4-4331-4ac1-a5d2-d3496fa667a3",
+      "data": [
+        {
+          "text": "Tell me more about my baby\u0027s growth "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "90e6367e-979a-49b6-9716-67b182136a7f",
+      "data": [
+        {
+          "text": "How is my baby growing "
+        },
+        {
+          "text": "this",
+          "alias": "weekno",
+          "meta": "@weekno",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "week",
+          "alias": "date-time",
+          "meta": "@sys.date-time",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "77884dac-3f67-4516-907a-968613c11617",
+  "name": "Savemom.Weekly info - baby - dev",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "babydev",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "isList": false
+        },
+        {
+          "dataType": "@weekno",
+          "name": "weekno",
+          "value": "$weekno",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date-time",
+          "name": "date-time",
+          "value": "$date-time",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

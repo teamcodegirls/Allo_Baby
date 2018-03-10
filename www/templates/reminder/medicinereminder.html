@@ -1,0 +1,47 @@
+<ion-view view-title="{{medicinereminder.title}}" hide-back-button="true">
+    <ion-header-bar align-title="left" class="bar-pink">
+      <div class="buttons">
+        <button class="button button-icon button-clear {{medicinereminder.menuicon}}" ng-click="goback()"></button>
+      </div>
+          <h1 class="title" style="font-size:18px;padding-top:3px;padding-left: 1.5em;">{{medicinereminder.title}}</h1>
+            <div class="buttons">
+             <a class="button button-clear padding-right" style="padding-top: 5px;" ng-click="set()">
+              <font color="#FFFFFF" size="5px"><i class="{{medicinereminder.headericon}}"></i></font></a>
+            </div>
+    </ion-header-bar>
+            <ion-content class="padding">
+                
+          <ion-list>
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.morning" ng-change="morningfun(filter.morning)">
+              <span class="font-head"> {{medicinereminder.data.morning}}</span>              
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+            <span class="font-light" style="background-color:#fff;"><input type="time" id="time1" ng-model="time1" ng-change="time1fun(time1)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.morning == false && {'color': '#444'} || filter.morning == true && {'color': '#FF4081'}"></span>
+            </label>
+        
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.afternoon" ng-change="afternoon(filter.afternoon)">
+              <span class="font-head"> {{medicinereminder.data.afternoon}}</span>
+          </ion-checkbox>
+          
+          <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time2" ng-model="time2" ng-change="time2fun(time2)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.afternoon == false && {'color': '#444'} || filter.afternoon == true && {'color': '#FF4081'}"></span></label>
+          
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.evening" ng-change="eveningfun(filter.evening)">
+              <span class="font-head"> {{medicinereminder.data.evening}}</span>
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time3" ng-model="time3" ng-change="time3fun(time3)" style="background-color:#fff;font-size: 14px!important;" ng-style="filter.evening == false && {'color': '#444'} || filter.evening == true && {'color': '#FF4081'}"></span></label>
+          
+          <ion-checkbox class="item-checkbox-right checkbox-square" ng-model="filter.night" ng-change="nightfun(filter.night)">
+             <span class="font-head">{{medicinereminder.data.night}}</span>
+          </ion-checkbox>
+          
+           <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;"><input type="time" id="time4" ng-model="time4" ng-change="time4fun(time4)" style="background-color:#fff;color: #444;font-size: 14px!important;" ng-style="filter.night == false && {'color': '#444'} || filter.night == true && {'color': '#FF4081'}"></span></label>
+          
+       </ion-list>
+
+            </ion-content>
+</ion-view>

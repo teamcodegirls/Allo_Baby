@@ -1,0 +1,110 @@
+{
+  "userSays": [
+    {
+      "id": "5146b852-40be-4f09-8d92-34ddb5ca98e3",
+      "data": [
+        {
+          "text": "Is "
+        },
+        {
+          "text": "vomiting",
+          "alias": "symptom",
+          "meta": "@symptom",
+          "userDefined": false
+        },
+        {
+          "text": " a normal symptom during pregnancy?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e9b7184c-7c0c-491e-8d52-b182d133e099",
+      "data": [
+        {
+          "text": "Is "
+        },
+        {
+          "text": "bleeding gums",
+          "alias": "symptom",
+          "meta": "@symptom",
+          "userDefined": true
+        },
+        {
+          "text": " expected?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "48e56c8e-488c-46f6-a701-53317cd83081",
+      "data": [
+        {
+          "text": "I am feeling "
+        },
+        {
+          "text": "vomiting",
+          "alias": "symptom",
+          "meta": "@symptom",
+          "userDefined": false
+        },
+        {
+          "text": "? Is this normal?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c21b0d8c-613e-42e5-a8bf-c77f2944c513",
+      "data": [
+        {
+          "text": "I am "
+        },
+        {
+          "text": "vomiting",
+          "alias": "symptom",
+          "meta": "@symptom",
+          "userDefined": true
+        },
+        {
+          "text": " today? Is this normal?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8ec9367b-0bd5-4275-b5cf-dfa5bbe8bc51",
+  "name": "Savemom.symptoms",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "health_symptoms",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@symptom",
+          "name": "symptom",
+          "value": "$symptom",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

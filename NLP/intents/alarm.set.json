@@ -1,0 +1,695 @@
+{
+  "userSays": [
+    {
+      "id": "bb5b4202-8d86-45ba-b8f7-bafbe891c526",
+      "data": [
+        {
+          "text": "remind me to take my "
+        },
+        {
+          "text": "medicine",
+          "alias": "reminder",
+          "meta": "@reminder",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b560cfe3-fb6c-49df-9047-0bf9432f34d9",
+      "data": [
+        {
+          "text": "remind me to go for a "
+        },
+        {
+          "text": "walk",
+          "alias": "reminder",
+          "meta": "@reminder",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "56f0a0cf-c181-46f6-8025-06232585ae12",
+      "data": [
+        {
+          "text": "remind me to have "
+        },
+        {
+          "text": "medicine",
+          "alias": "reminder",
+          "meta": "@reminder",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bdf2f55c-a4f4-4feb-86ff-ae305947b69c",
+      "data": [
+        {
+          "text": "wake",
+          "alias": "reminder",
+          "meta": "@reminder",
+          "userDefined": true
+        },
+        {
+          "text": " me up at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4adbee56-2e3b-4320-8904-ffeee3c3dd2d",
+      "data": [
+        {
+          "text": "I want to wake "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "7 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Jazz",
+          "alias": "genre",
+          "meta": "@sys.music-genre",
+          "userDefined": true
+        },
+        {
+          "text": " music"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "da27bc16-c74f-41f9-9b02-ffc9d4494f54",
+      "data": [
+        {
+          "text": "set alarm for "
+        },
+        {
+          "text": "10 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "medicine",
+          "alias": "reminder",
+          "meta": "@reminder",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "172b0480-f78e-4fcf-98b5-96690b9695f0",
+      "data": [
+        {
+          "text": "set new alarm for "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " on "
+        },
+        {
+          "text": "Wednesday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8e5f289f-8816-45e6-8884-0bff85ab59d3",
+      "data": [
+        {
+          "text": "alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dd20d0ec-17ac-415a-be26-b1b233e3f4b8",
+      "data": [
+        {
+          "text": "I\u0027d like to set an alarm at "
+        },
+        {
+          "text": "7 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "every weekend",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c1d966dd-021d-4ef9-839c-aed06ed3a2b8",
+      "data": [
+        {
+          "text": "set an alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9b406cd9-1fc5-4477-ae1e-dd885e8f50b5",
+      "data": [
+        {
+          "text": "wake me up",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b69aa869-c08a-4af7-a657-e0a8f333ea9c",
+      "data": [
+        {
+          "text": "wake me up with "
+        },
+        {
+          "text": "Cool Girl",
+          "alias": "song",
+          "meta": "@song",
+          "userDefined": true
+        },
+        {
+          "text": " song"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9f7e4285-8998-44ae-9b3f-23ed7a91c9de",
+      "data": [
+        {
+          "text": "wake me up "
+        },
+        {
+          "text": "in 8 hours",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Let It Be",
+          "alias": "song",
+          "meta": "@song",
+          "userDefined": true
+        },
+        {
+          "text": " by "
+        },
+        {
+          "text": "The Beatles",
+          "alias": "artist",
+          "meta": "@sys.music-artist",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a5de06b0-3ca2-4ccb-9946-c4209b07ded2",
+      "data": [
+        {
+          "text": "set alarm at "
+        },
+        {
+          "text": "8 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " in the morning"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "72b6d996-a90a-47f6-9834-a8ed5bacc8c2",
+      "data": [
+        {
+          "text": "alarm for "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1eafc229-f513-4108-91d1-205cd3179bd3",
+      "data": [
+        {
+          "text": "set new alarm for "
+        },
+        {
+          "text": "10 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d29cdfd1-b0e5-4f03-a157-35f6a0c44885",
+      "data": [
+        {
+          "text": "wake me up at "
+        },
+        {
+          "text": "8",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "200ec92b-d138-4bab-bfba-1440bcc09e45",
+      "data": [
+        {
+          "text": "could you set an alarm for "
+        },
+        {
+          "text": "6 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ffc28485-9b4f-4bc7-ac0a-aa9716cbeb9e",
+      "data": [
+        {
+          "text": "I\u0027d like to set an alarm for "
+        },
+        {
+          "text": "7 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f149d9ae-c0dd-469e-8ee7-e27e1f185943",
+      "data": [
+        {
+          "text": "new alarm called "
+        },
+        {
+          "text": "Gym",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ab255894-bdbb-439b-8c6b-648f947f516a",
+      "data": [
+        {
+          "text": "alarm for "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "8 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4bfa7c13-4071-4f9c-9b7f-9705c0968405",
+      "data": [
+        {
+          "text": "new alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9e1940ae-1db7-4e4e-9be5-64ae508c0f7f",
+      "data": [
+        {
+          "text": "wake me up "
+        },
+        {
+          "text": "every day",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "6",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "32c2da82-deb3-43b7-98c1-faaad8893767",
+      "data": [
+        {
+          "text": "could you set an alarm for "
+        },
+        {
+          "text": "every Monday",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9ce93476-54f8-43a5-9b6c-3890bd00fb30",
+      "data": [
+        {
+          "text": "could you set an alarm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9db5ccb9-3677-4983-bd1a-ea522c9502e0",
+      "data": [
+        {
+          "text": "I need an alarm set for "
+        },
+        {
+          "text": "weekdays",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "4 am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e53a629b-9aa4-4f47-8f8b-a80ff2ce9102",
+      "data": [
+        {
+          "text": "set alarm "
+        },
+        {
+          "text": "Work",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "tomorrow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "9 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "93617077-e52e-4f44-85ce-fb3273dbdfad",
+      "data": [
+        {
+          "text": "new alarm called "
+        },
+        {
+          "text": "Gym",
+          "alias": "alarm-name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "weekdays",
+          "alias": "recurrence",
+          "meta": "@recurrence",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "10",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4c033aee-6f91-41c8-90f9-29a9315711e2",
+  "name": "alarm.set",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.set",
+      "affectedContexts": [
+        {
+          "name": "alarm",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.any",
+          "name": "alarm-name",
+          "value": "$alarm-name",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence",
+          "isList": false
+        },
+        {
+          "dataType": "@song",
+          "name": "song",
+          "value": "$song",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.music-artist",
+          "name": "artist",
+          "value": "$artist",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.music-genre",
+          "name": "genre",
+          "value": "$genre"
+        },
+        {
+          "dataType": "@reminder",
+          "name": "reminder",
+          "value": "$reminder",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

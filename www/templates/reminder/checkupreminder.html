@@ -1,0 +1,30 @@
+<ion-view view-title="{{checkupreminder.title}}" hide-back-button="true">
+    <ion-header-bar align-title="left" class="bar-pink">
+      <div class="buttons">
+        <button class="button button-icon button-clear {{checkupreminder.menuicon}}" ng-click="goback()"></button>
+      </div>
+          <h1 class="title" style="font-size:18px;padding-top:3px;padding-left: 1.5em;">{{checkupreminder.title}}</h1>
+            <div class="buttons">
+             <a class="button button-clear padding-right" style="padding-top: 5px;" ng-click="set()">
+              <font color="#FFFFFF" size="5px"><i class="{{checkupreminder.headericon}}"></i></font></a>
+            </div>
+    </ion-header-bar>
+        <ion-content class="padding">                
+          <ion-list>
+          <div style="padding-left:17px;">
+          <span class="font-head">{{checkupreminder.data.checkupdate}}</span>
+          </div>
+           <label class="item item-input item-stacked-label">
+            <span class="font-light" style="background-color:#fff;">
+            <input type="date" id="date" ng-model="checkupdate" ng-change="datefun(checkupdate)" style="font-size: 14px!important;color:#FF4081;"></span>
+            </label><br>
+                 
+          <div style="padding-left:17px;">
+          <span class="font-head">{{checkupreminder.data.checkuptime}}</span>
+          </div>
+          <label class="item item-input item-stacked-label">
+          <span class="font-light" style="background-color:#fff;">
+          <input type="time" id="time" ng-model="checkuptime" ng-change="time1fun(checkuptime)" style="font-size: 14px!important;color:#FF4081; margin-top: 0.5em;"></span></label><br>          
+       </ion-list>
+    </ion-content>
+</ion-view>
